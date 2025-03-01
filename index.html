@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Portfolio - Erja Kyläkorpi </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- linkitykset -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Oma CSS-tiedosto -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="dark-bg">
+
+        <!--navigointipalkki-->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Etusivu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tietoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Koulutus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Työkokemus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Taidot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projektit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Yhteystiedot</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="language-toggle">
+                    <button class="lang-option en"><strong>EN</strong></button>
+                    <button class="lang-option fi active"><strong>FI</strong></button>
+                </div>
+            </div>
+        </nav>
+
+        <!--"etusivu"-->
+        <div class="section hero" id="hero"> 
+            <div class= "hero-bg"> 
+                <img src="media/taustakuva.jpeg" alt="Taustakuva1">
+            </div>
+            <div class="hero-content">
+                <h1>Erja Kyläkorpi</h1>
+                <h2 class="mb-5"> 
+                    <span id="typed-text"></span>
+                </h2>
+                <p>Itä-Suomen yliopiston tietojenkäsittelytieteen opiskelija, jonka tavoitteena on kehittyä tekoälyyn ja robotiikkaan erikoistuneeksi ohjelmistokehittäjäksi. Uskon, että nämä alat tarjoavat avaimet tulevaisuuden haasteiden ratkaisemiseen. Ja hei, jos tekoäly valtaa joskus maailman, olen ainakin valmis!</p>
+            </div>
+        </div>
+
+        <!-- tietoa -->
+        <div class="section about" id="about">
+            <div class="container">
+                <h2>Tietoa</h2>
+                <div class="row about-row">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <p>Olen motivoitunut maisterivaiheen opiskelija, jolla on vahva pohja matemaattisessa ajattelussa ja intohimoinen halu kehittyä ohjelmistoalan ammattilaiseksi. Etsin harjoittelupaikkaa, jossa pääsen soveltamaan teoreettista osaamistani käytännön projekteissa ja syventämään ymmärrystäni ohjelmistotuotantoprosessehin liittyvistä tehtävistä. Analyyttinen lähestymistapani ja luova ongelmanratkaisukykyni yhdistettynä jatkuvaan oppimisen haluun tekevät minusta arvokkaan lisän tiimiin, joka arvostaa innovaatioita ja pyrkii jatkuvasti parantamaan toimintaansa. </p>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="media/kuva.jpg" alt="kuva" class="rounded-circle img-fluid omakuva">
+                    </div>
+                </div>
+                <div class="second-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nunc ac nulla efficitur dapibus. Fusce gravida nulla at lorem vestibulum, at consequat tortor pulvinar. Nam sed volutpat ex, eu sollicitudin neque. Donec non mi turpis. Quisque semper tristique tellus, non vulputate ex luctus id. Cras malesuada congue purus, nec rutrum urna faucibus ac. Fusce tortor neque, efficitur eget iaculis non, vulputate eu ex. Phasellus ac tincidunt mauris, eu rutrum felis. In in ante elit. Cras malesuada congue purus, nec rutrum urna faucibus ac. Fusce tortor neque, efficitur eget iaculis non, vulputate eu ex. Phasellus ac tincidunt mauris, eu rutrum felis. In in ante elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- koulutus -->
+        <div class="section education" id="education">
+            <div class="container">
+                <h2>Koulutus</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Filosofian maisteri, tietojenkäsittelytiede</h3>
+                                <p>Itä-Suomen yliopisto, Joensuu</p>
+                                <p>2024 - </p> 
+                                <p>Syventävät opinnot: tekoäly, syväoppiminen, konenäkö, katseenseuranta, robotiikka sekä oppimisanalytiikka </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Luonnontieteiden kandidaatti, matematiikka</h3>
+                                <p>Itä-Suomen yliopisto, Joensuu</p>
+                                <p>Valmistumisvuosi: 2024</p>
+                                <p>Sivuaineet: ympäristötiede ja biologia, fysiikka sekä tietojenkäsittelytiede </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- työkokemus -->
+        <div class="section work" id="work">
+            <div class="container">
+                <h2>Työkokemus</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Asiakaspalvelija</h3>
+                                <p><strong> Terveystalo </strong></p>
+                                <p><strong> 2018 -</strong></p>
+                                <p>Monipuoliset asiakaspalvelutehtävät valtakunnallisessa puhelinasiakaspalvelukeskuksessa. Työssä olen kehittänyt vahvat vuorovaikutustaidot, kyvyn sopeutua muuttuviin tilanteisiin sekä taidon hallita suuria tietomääriä ja löytää tarvittava tieto nopeasti.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Lorem ipsum</h3>
+                                <p><strong>dolor</strong></p>
+                                <p><strong>sit - amet</strong></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nunc ac nulla efficitur dapibus. Fusce gravida nulla at lorem vestibulum, at consequat tortor pulvinar. Nam sed volutpat ex, eu sollicitudin neque. Donec non mi turpis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- taidot -->
+        <div class="section skills" id="skills">
+            <div class="container">
+                <h2>Taidot</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-html5-plain-wordmark colored" style="font-size: 2em;"></i> <!-- html -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                    <span class="visually-hidden">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-css3-plain-wordmark colored" style="font-size: 2em;"></i> <!-- css -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                    <span class="visually-hidden">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-javascript-plain colored" style="font-size: 2em;"></i> <!-- js -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                    <span class="visually-hidden">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-java-plain-wordmark colored" style="font-size: 2em;"></i> <!-- java -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+                                    <span class="visually-hidden">55%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-python-plain-wordmark colored" style="font-size: 2em;"></i> <!-- python -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+                                    <span class="visually-hidden">35%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-mariadb-original-wordmark" style="font-size: 2em;"></i><!--mariaDB -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                    <span class="visually-hidden">10%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-react-original-wordmark colored" style="font-size: 2em;"></i> 
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                    <span class="visually-hidden">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-nodejs-plain-wordmark colored" style="font-size: 2em;"></i>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                    <span class="visually-hidden">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-nextjs-original-wordmark" style="font-size: 2em;"></i>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                    <span class="visually-hidden">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-pytorch-plain-wordmark colored" style="font-size: 2em;"></i>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                    <span class="visually-hidden">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <i class="devicon-tensorflow-original-wordmark colored" style="font-size: 2em;"></i>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated custom-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                    <span class="visually-hidden">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+     
+        <!-- projektit -->
+        <div class="section projects" id="projects">
+            <div class="container">
+                <h2>Projektit</h2>
+                <div class="projects-image-container">
+                    <img src="media/koodi.jpg" alt="Projektien kuva">
+                </div>
+                <div class="projects-cards-overlay"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <i class="bi bi-tools" style="font-size: 2em;color: #36D3F2;"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">Projektin otsikko</h5>
+                                    <p class="card-text">Lyhyt kuvaus projektista. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan felis ut diam efficitur congue. Duis dolor magna, efficitur nec lectus nec, egestas efficitur nunc. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <i class="bi bi-tools" style="font-size: 2em; color: #36D3F2;"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">Projektin otsikko</h5>
+                                    <p class="card-text">Lyhyt kuvaus projektista. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan felis ut diam efficitur congue. Duis dolor magna, efficitur nec lectus nec, egestas efficitur nunc. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <i class="bi bi-tools" style="font-size: 2em; color: #36D3F2;"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">Projektin otsikko</h5>
+                                    <p class="card-text">Lyhyt kuvaus projektista. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan felis ut diam efficitur congue. Duis dolor magna, efficitur nec lectus nec, egestas efficitur nunc. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <i class="bi bi-tools" style="font-size: 2em; color: #36D3F2;"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">Projektin otsikko</h5>
+                                    <p class="card-text">Lyhyt kuvaus projektista. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan felis ut diam efficitur congue. Duis dolor magna, efficitur nec lectus nec, egestas efficitur nunc. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- yhteystiedot -->
+        <div class="section contact" id="contact">
+            <div class= "contact-bg"> 
+                <img src="media/näppäimistö.jpeg" alt="Taustakuva2">
+            </div>
+            <div class="container">
+                <h2>Yhteystiedot</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p style="text-align: left;">Ota yhteyttä:</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Nimi" type="text" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Sähköpostiosoite" type="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input class="form-control" id="subject" name="subject" placeholder="Aihe" type="text" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="message" name="message" placeholder="Viesti" type="text" rows="5" required></textarea>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Lähetä</button>
+                            </div>
+                        </div>
+                        <div class="contact-footer">
+                            <hr>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/erjakylakorpi" class="linkedin-icon" target="_blank">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="" class="github-icon" >
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skrollaus painike -->
+        <i id="scrollToTopBtn" title="Siirry ylös" class="bi bi-arrow-up-circle"></i>
+
+        <footer class="fixed-bottom">
+            <div class="container">
+                <p>&copy; 2025 Erja Kyläkorpi. Kaikki oikeudet pidätetään. | <a href="licenses.html" target="_blank">Lisenssit</a></p>
+            </div>
+        </footer>
+
+        <!-- JS-toiminnallisuus-->
+        <script src="script.js"></script>
+    </body>
+</html>

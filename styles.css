@@ -1,0 +1,357 @@
+/*omat tyylimääritykset*/
+
+.dark-bg {
+    background-color: #222323;
+    color: #edeede; 
+}
+
+.section{
+    padding: 40px ; 
+    text-align: center;
+    color: #edeede;
+ }
+ 
+ .section h2{
+     margin-bottom: 50px;
+     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+ }
+
+/*navigointipalkki*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Läpinäkyvä tausta */
+    padding: 1rem 0;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    padding: 0 1.5rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #36D3F2 !important; /* Korosta aktiivinen linkki */
+}
+
+.navbar-toggler {
+    margin-left: 0; /* Varmistaa, että painike on vasemmassa reunassa */
+    border-color: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(54, 211, 242, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*"etusivu"*/
+.hero{
+    position: relative; /*sisällön asettelu kuvan päälle*/
+    width: 100%;
+    height: 100vh; /*100% näytön korkeudesta*/
+    overflow: hidden; /*piilottaa mahdolliset ylivuodot*/
+}
+
+.hero-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*skaalaa kuvan täyttämään koko alueen*/
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*keskittää sisällön*/
+    color: #edeede;
+    text-align: center;
+}
+
+.hero h2{
+    color: #36D3F2; 
+}
+
+/*tietoa*/
+.about .row {
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+}
+
+.about p {
+    text-align: justify; 
+    
+}
+
+.omakuva {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .section.about .about-row{
+        flex-direction: column-reverse;  /*siirrä kuva oikealta tekstin yläpuolelle näytön pienentyessä*/
+    }
+}
+
+/*kortit*/
+.card {
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    max-width: 70vw;
+    width: 100%; 
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #323434;
+}
+
+.card h3 {
+    color: #36D3F2; 
+}
+
+.card h5{
+    color:#edeede;
+}
+
+.card p{
+    color: #CDD4D4;
+}
+
+@media (min-width: 768px) {
+    .col-12 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 20px; 
+    }
+}
+
+/*taidot*/
+.skill {
+    margin-bottom: 20px;
+    display: flex; 
+    align-items: center; 
+}
+
+.skills .row{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.skills .col-md-6 {
+    padding: 20px; 
+}
+
+.progress {
+    height: 20px;
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #CDD4D4;
+}
+
+.progress-bar {
+    background-color: #D492FD; 
+}
+
+.progress-bar.custom-animated {
+    animation: progressBarAnimation 2s ease-in-out forwards, progress-bar-stripes 1s linear infinite;
+}
+
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position: 1rem 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*projektit*/
+.projects-image-container {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.projects-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+@media (max-width: 767px) {
+    .card {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-left: 0; 
+    }
+
+    .projects-image-container {
+        margin-right: 0;
+        margin-left: 0; 
+    }
+}
+
+/*yhteystiedot*/
+.contact {
+    position: relative; /*sisällön asettelu kuvan päälle*/
+    width: 100%;
+    min-height: 100vh; /*100% näytön korkeudesta*/
+    overflow: hidden; /*piilottaa mahdolliset ylivuodot*/ 
+}
+
+.contact-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*skaalaa kuvan täyttämään koko alueen*/
+}
+
+.contact .container{ 
+    position: relative;
+}
+
+.contact .col-md-8{
+    max-width: 600px;
+}
+
+.contact .form-control{
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.btn{
+    display: inline-block; 
+    visibility: visible;
+    opacity: 1;
+    background-color: #17a2db; 
+    color: #edeede; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-footer{
+    margin-top: 5vh;
+}
+
+.contact-footer hr {
+    background-color: #D492FD;
+    height: 2px; 
+    border: none;
+}
+
+.linkedin-icon{
+    color: #009AED;
+    font-size: 2em;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.github-icon{
+    color: white;
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+/*Scrollauspainike*/
+#scrollToTopBtn {
+    display: none; /*painike ei näy etusivulla*/
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 9999;
+    color: #D492FD;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#scrollToTopBtn:hover {
+    color: #E9C9FD;
+}
+
+/*animaatio*/
+.blink-cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/*alareuna*/
+footer {
+    background-color: #222323; 
+    padding: 0.5rem 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+footer p { 
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    color:#CDD4D4; 
+}
+
+/*kielipainike*/
+.language-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    border-radius: 6px; 
+    overflow: hidden;
+    font-size: small;
+}
+
+.lang-option {
+    background-color: #f0f0f0; 
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lang-option.active {
+    background-color: #17a2db; 
+}
+
+.lang-option:hover {
+    background-color: #0056b3; 
+}
