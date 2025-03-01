@@ -137,13 +137,13 @@ window.onload = function() {
         }
     });
 
-    
+   /*
     //animaation ääni vain kun ollaan "hero" osiossa
     var heroSection = document.getElementById("hero");
     if (heroSection && (window.scrollY === 0 || window.pageYOffset === 0)) {
-        var typingSound = new Audio('/media/typing.mp3');
+        var typingSound = new Audio('media/typing.mp3');
         typingSound.preload = 'auto';
         typingSound.play();
     }
-        
+    */    
 }
