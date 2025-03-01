@@ -137,7 +137,7 @@ window.onload = function() {
         }
     });
 
-    /*
+    
     //animaation ääni vain kun ollaan "hero" osiossa
     var heroSection = document.getElementById("hero");
     if (heroSection && (window.scrollY === 0 || window.pageYOffset === 0)) {
@@ -145,5 +145,5 @@ window.onload = function() {
         typingSound.preload = 'auto';
         typingSound.play();
     }
-        */
+        
 }
