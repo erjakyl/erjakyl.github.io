@@ -58,12 +58,6 @@ window.onload = function() {
         }
     });
 
-    //GitHun-ikoni
-    document.querySelector('.github-icon').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        alert('GitHub -profiili on vielä työn alla.');
-    });
-
     //Yhteydenottolomakkeen lähetyspainike
     document.querySelector('.btn.pull-right').addEventListener('click', function(event) {
         event.preventDefault();
